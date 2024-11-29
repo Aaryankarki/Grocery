@@ -1,0 +1,89 @@
+/* Add your CSS styles here */
+body {
+    background-image: url("https://img.freepik.com/premium-photo/fruit-stand-with-bunch-fruits-background_853677-13467.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 2;
+    height: 0;
+}
+header {
+    background-color: #e5c8c8;
+    color: #ffff03;;
+    padding: 2rem;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+main {
+    padding: 2rem;
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+footer {
+    background-color: #ada6a6cb;
+    padding: 2rem;
+    text-align: center;
+    width: 1500px;
+    height: 10px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.image-container {
+    color: #ffffff;
+}
+.image-container img {
+    max-width:80%;
+    height: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.image-box a:hover img {
+    transform: scale(1.1);
+}
+.image-box {
+    width: 500px;
+    height: 500px;
+    border: 5px solid #efd40b;
+    overflow: hidden;
+    background-color: #cd345f;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+    transition: border-color 0.3s ease-in-out;
+}
+.image-box a:hover {
+    border-color: #7b504f;
+}
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+button {
+    background: #fb0b03;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.button a {
+    color: rgb(176, 0, 0);
+}
+button:hover {
+    background-color: #dbdb15;
+    color: rgb(171, 31, 31);
+}
+.marquee-conatiner {
+    width: 100%;
+    overflow: hidden;
+}
+.marquee-text {
+    font-size: 24px;
+    color: #333;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampaStore</title>
+    <link rel="stylesheet" href="/About us of CampaStore/HTML/CSS/3Index.css">
+    <link rel="icon" href="/About us of CampaStore/IMAGE/logo.png">
+    <link rel="stylesheet" href="/About us of CampaStore/HTML/Nav.css">
+    <link rel="stylesheet" href="/About us of CampaStore/HTML/Footer.css">
+  </head>
+  <body>
+    <header>
+
+
+        <!--navbar code-->
+        <div class="logo">
+          <img src="/About us of CampaStore/IMAGE/logo.png" alt="logo">
+        </div>
+    
+        <nav>
+          <ul class="navbar">
+            <li> <a class="active" href="/Homepage of campaStore/html/Index.html"> Home</a> </li>
+            <li><a href="/Product of CampaStore/21Front.html"> Product</a></li>
+            <li><a href="/Researchpage of CampaStore/research page/Html/research.html"> Research</a></li>
+            <li><a href="/Blogpage of CampaStore/HTML/Index.html"> Blog </a></li>
+            <li><a href="/About us of CampaStore/HTML/10Index.html"> About Us</a></li>
+            <li><a href="/Homepage of campaStore/html/Login.html" class="signup-btn"> Sign Up</a></li>
+            </ul>
+    
+        </nav>
+    
+    
+    
+        <!--Search bar-->
+        <div class="search">
+          <div class="icon"></div> <!-- Added icon element -->
+          <div class="input">
+            <input type="text" placeholder="Search" id="mysearch">
+          </div>
+        </div>
+    
+        <script>
+          const icon = document.querySelector('.icon');
+          const search = document.querySelector('.search');
+          icon.onclick = function () {
+            search.classList.toggle('active')
+          }
+        </script>
+    
+    
+    
+    
+        <!--cart-->
+        <div class="cart">
+          <a href="#" id="cartIcon"><img src="/About us of CampaStore/IMAGE/cart.png" width="40px" height="40px"></a>
+        </div>
+    
+       
+    
+    
+    
+        <!--Dark mode-->
+        <nav>
+          <div class="toggle-btn" id="btn">
+            <span id="btnText">Dark</span>
+            <img src="/About us of CampaStore/IMAGE/moon.png" id="btnIcon">
+          </div>
+    
+        </nav>
+        <section>
+          <nav id="sideNav">
+    
+            <ul class="hi">
+              <img src="/About us of CampaStore/IMAGE/logo.png" width="150px" height="120px">
+              <li><a href="/Homepage of campaStore/html/Index.html">Home</a></li>
+              <li><a href="/Product of CampaStore/21Front.html">Product</a></li>
+              <li><a href="/Researchpage of CampaStore/research page/Html/research.html">Research</a></li>
+              <li><a href="/Blogpage of CampaStore/HTML/Index.html">Blog</a></li>
+              <li><a href="/About us of CampaStore/HTML/10Index.html">About Us</a></li>
+              <li><a href="/Homepage of campaStore/html/Login.html">Signup/login</a></li>
+            </ul>
+          </nav>
+          <img src="/About us of CampaStore/IMAGE/aaryan.png" id="menuBtn" width="10px" height="50px">
+    
+          <script>
+            var menuBtn = document.getElementById("menuBtn");
+            var sideNav = document.getElementById("sideNav");
+    
+            sideNav.style.right = "-250px";
+            menuBtn.onclick = function () {
+              if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+              }
+    
+              else {
+                sideNav.style.right = "-250px";
+              }
+            }
+    
+          </script>
+          </nav>
+        </section>
+    
+    
+    
+      </header>
+      <script>
+        let btn = document.getElementById("btn");
+        let btnText = document.getElementById("btnText");
+        let btnIcon = document.getElementById("btnIcon");
+    
+        btn.onclick = function () {
+          document.body.classList.toggle("dark-theme");
+    
+          if (document.body.classList.contains("dark-theme")) {
+            btnIcon.src = "/About us of CampaStore/IMAGE/sun.png";
+            btnText.innerHTML = "Light";
+    
+          }
+          else {
+            btnIcon.src = "/About us of CampaStore/IMAGE/moon.png";
+            btnText.innerHTML = "Dark";
+    
+          }
+        }
+      </script>
+ <header>
+  <marquee behavior="scroll" direction="left" scrollamount="30">
+    <h1>About us Welcome to Campa Store your one-stop destination for fresh, quality groceries delivered right to your doorstep!</h1>
+  </marquee>
+</header>
+<main>
+  <div class="image-container">
+    <div class="image-box">
+      <div style="text-align: center; color:white; font-size: 40px;">
+        <marquee>
+          <p><strong>OUR TEAMS</strong></p>
+        </marquee>
+      </div>
+      <figure></figure>
+      <button>
+        <a href="">
+          <img src="/About us of CampaStore/IMAGE/team.jpeg" alt width="50" height="10">
+        </a>
+      </button>
+      <marquee behavior="scroll" direction="left" scrollamount="15">
+        <p>OurTeam have been working in this office since from 2015. overall the team members are amazing here I have gain a great experience in my life with this entire team of Campa Store Family</p>
+      </marquee>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="image-box">
+      <figure>
+        <a href="8Chasita.html">
+          <img src="/About us of CampaStore/IMAGE/chasita.jpeg" alt width="10" height="50">
+        </a>
+        <figcaption>
+          <strong>Chasita Rai</strong>
+        </figcaption>
+        <br>
+        <button type="button">Let's Talk</button>
+      
+      </figure>
+    </div>
+    <div class="image-box">
+  
+        <a href="/About us of CampaStore/HTML/6Amit.html">
+            <img src="/About us of CampaStore/IMAGE/ameet.jpg" alt="Image 2 description">
+          <figcaption>Amit Pokhrel</figcaption></a>
+          <button type="button">Let's Talk</button>
+    </div>
+    <div class="image-box">
+      <figure>
+        <a href="13Pranisha.html">
+          <img src="/About us of CampaStore/IMAGE/pranisha.jpg" alt="Image 3 description">
+        </a>
+        <figcaption>
+          <strong>Pranisha Timsina</strong>
+          <br><br>
+          <button type="button">Let's Talk</button>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="image-box">
+      <figure>
+        <a href="7Aryan.html">
+          <img src="/About us of CampaStore/IMAGE/aaryan.jpg" alt="Image 4 descriptionsas">
+        </a>
+        <figcaption>
+          <strong>Aaryan Karki</strong>
+          <br><br>
+          <button type="button">Let's Talk</button>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="image-box">
+      <figure>
+        <a href="11Manav.html">
+          <img src="/About us of CampaStore/IMAGE/manav.jpg" alt="Image 5 description">
+        </a>
+        <figcaption>
+          <strong>Manav Pradhan</strong>
+          <br><br>
+          <button type="button">Let's Talk</button>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <strong>
+    <p style="color: rgb(248, 248, 248);">At Campa Store we're passionate about providing our customers with the finest selection of fruits, vegetables, meats, dairy products, pantry staples, and more. With a commitment to quality, convenience, and exceptional service, we strive to make grocery shopping a hassle-free experience for busy individuals and families.</p>
+    <p style="color: rgb(248, 248, 248);">Our journey began with a simple mission: to make it easier for people to access fresh, nutritious food without sacrificing quality or breaking the bank. Founded by a team of food lovers and industry experts, [Store Name] is dedicated to sourcing the best products from local farms, trusted suppliers, and renowned brands.</p>
+    <p style="color: rgb(248, 248, 248);">We believe that our success is due to our unwavering commitment to our core values of integrity, innovation, and collaboration. We strive to create a positive and inclusive workplace where everyone can thrive and contribute their unique skills and perspectives.</p>
+    <p style="color: rgb(248, 248, 248);">From farm-fresh produce to artisanal cheeses, from organic grains to gourmet treats, we take pride in offering a diverse range of options to suit every taste and dietary preference. Whether you're stocking up on essentials for the week ahead or searching for that special ingredient for your next culinary masterpiece, you'll find everything you need at Campa Store.</p>
+    <p style="color: rgb(248, 248, 248);">But Campa Store is more than just a grocery store – we're a part of your community. We believe in supporting local farmers and producers, reducing food waste, and promoting sustainable practices throughout the supply chain. With every purchase you make, you're not just getting great food you're also supporting a more resilient, equitable food system for everyone.</p>
+    <p style="color: rgb(248, 248, 248);">Thank you for choosing Campa Store as your trusted grocery partner. We're here to help you eat well, live well, and enjoy every bite along the way.</p>
+    <p style="color: rgb(248, 248, 248);">Happy shopping!</p>
+    <p style="color: rgb(248, 248, 248);">Campa Store</p>
+  </strong>
+</main>
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <div class="logo"><img src="/About us of CampaStore/IMAGE/logo.png"></div>
+        <div class="navigation">
+          <h2>Navigation</h2>
+
+          <a href="/Homepage of campaStore/html/Index.html">Home</a>
+          <a href="/Product of CampaStore/21Front.html">Products</a>
+          <a href="/Homepage of campaStore/html/Contact Us.html">Contact Us</a>
+
+        </div>
+
+        <div class="useful-links">
+          <h2>Useful Links</h2>
+
+          <a href="/Homepage of campaStore/html/Login.html">Coupons</a>
+          <a href="#">Blog Post</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Join Affiliate</a>
+
+        </div>
+        <div class="follow-us">
+          <h2>Follow Us</h2>
+
+          <a href="https://www.facebook.com/profile.php?id=61559792550482">Facebook</a>
+          <a href="https://twitter.com/i/flow/login">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.youtube.com/">Youtube</a>
+
+
+        </div>
+        <div class="payment-box">
+          <form action="/payment" method="post">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_TYooMQauvdEDq54NiTphI7jx" data-amount="999" data-name="Demo Site"
+              data-description="Example Description"
+              data-image="https://play-lh.googleusercontent.com/MRzMmiJAe0-xaEkDKB0MKwv1a3kjDieSfNuaIlRo750_EgqxjRFWKKF7xQyRSb4O95Y">
+              </script>
+
+          
+            
+
+
+
+            <div class="copyright">
+
+              <p > &copy; Copyright 2024 CampaStore</p>
+
+            </div>
+        </div>
+    </footer>
+  </footer>
+  </body>
+  </html>

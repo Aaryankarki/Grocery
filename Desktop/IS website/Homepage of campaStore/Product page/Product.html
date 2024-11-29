@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/image/logo.png" alt="logo">
+        </div>
+    
+        <nav>
+               <ul class="navbar">
+      <li> <a class="active" href="#"> Home</a> </li>
+      <li><a href="/html/product.html"> Product</a></li>
+      <li><a href="research.html"> Research</a></li>
+       <li><a href="blog.html/"> Blog </a></li>
+      <li><a href="aboutus.html"> About Us</a></li>
+     <li><a href="/html/Login.html" class="signup-btn"> Sign Up</a></li>
+     
+    </nav>
+    
+    
+    
+    <!--Search bar-->
+    <div class="search">
+      <div class="icon"></div> <!-- Added icon element -->
+      <div class="input">
+    <input type="text" placeholder="Search" id="mysearch">
+    </div>
+    </div>
+    
+    <script>
+      const icon = document.querySelector('.icon');
+      const search = document.querySelector('.search');
+      icon.onclick = function(){
+          search.classList.toggle('active')
+      }
+    </script>
+    
+    
+    
+    
+    <!--cart-->
+    <div class="cart">
+      <a href="#"><img src="/image/cart.png" width="40px" height ="40px"></a>
+    </div>
+    
+    
+    
+    
+    <!--Dark mode-->
+    <nav>
+        <div class="toggle-btn" id="btn">
+        <span id="btnText">Dark</span>
+        <img src="/image/moon.png" id="btnIcon">
+     </div>
+    
+    </nav>
+    <section>
+    <nav id="sideNav">
+        
+        <ul class="hi">
+         <img src="/image/logo.png" width="150px" height="120px">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="/html/Login.html">Signup/login</a></li>
+        </ul>
+    </nav>
+        <img src="/image/menu.png" id="menuBtn" width="10px" height="50px">
+    
+                <script>
+                    var menuBtn= document.getElementById("menuBtn");
+                    var sideNav= document.getElementById("sideNav");
+    
+                    sideNav.style.right= "-250px";
+                    menuBtn.onclick= function(){
+                        if( sideNav.style.right== "-250px")
+                        {
+                        sideNav.style.right="0";
+                       }
+    
+                    else{
+                        sideNav.style.right= "-250px";
+                    }
+                }
+    
+                </script>
+    </nav>
+    </section>
+    
+    
+    
+    </header>
+    <script>
+        let btn= document.getElementById("btn");
+        let btnText= document.getElementById("btnText");
+        let btnIcon= document.getElementById("btnIcon");
+    
+    btn.onclick= function(){
+            document.body.classList.toggle("dark-theme");
+    
+            if( document.body.classList.contains("dark-theme")){
+                btnIcon.src="/image/sun.png";
+                btnText.innerHTML="Light";
+    
+            }
+            else{
+                btnIcon.src="/image/moon.png";
+                btnText.innerHTML="Dark";
+    
+            }
+        }
+    </script>
+    <div class="banner">
+        
+    </div>
+    <div class="container">
+        <div class="product-container">
+            <img src="./images/banana.jpeg" alt="imageOfProducts"><br>
+            <p id="p-name">Banana</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/40.jpg" alt="rating"></div>
+                    <span>4.0</span></div><br>
+                    <p>Rs 100 </p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/bellpepper.jpg" alt="imageOfProducts"><br>
+            <p id="p-name">Bell-pepper</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/45.jpg" alt="rating"></div>
+                    <span>4.5</span></div><br>
+                    <p>Rs 120</p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/brinjal.jpeg" alt="imageOfProducts"><br>
+            <p id="p-name">Brinjal</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/45.jpg" alt="rating"></div>
+                    <span>4.5</span></div><br>
+                    <p>Rs 120</p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/brocauli.jpeg" alt="imageOfProducts"><br>
+            <p id="p-name">Brocauli</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/50.jpg" alt="rating"></div>
+                    <span>Rs 120 </span></div><br>
+                    <p>$4.50</p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/cabbage.jpg" alt="imageOfProducts"><br>
+            <p id="p-name">Cabbage</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/45.jpg" alt="rating"></div>
+                    <span>4.5</span></div><br>
+                    <p> Rs 120</p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/cucumber.jpeg" alt="imageOfProducts"><br>
+            <p id="p-name">Cucumber</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/40.jpg" alt="rating"></div>
+                    <span>4.0</span></div><br>
+                    <p>Rs 55 </p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/leafyvegetable.jpeg" alt="imageOfProducts"><br>
+            <p id="p-name">Spinach</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/50.jpg" alt="rating"></div>
+                    <span>5.0</span></div><br>
+                    <p>Rs 50 </p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+        <div class="product-container">
+            <img src="./images/mangoes.webp" alt="imageOfProducts"><br>
+            <p id="p-name">Mangoes</p><br>
+            <div class="rating">
+                <div class="stars">
+                    <img src="./images/45.jpg" alt="rating"></div>
+                    <span>4.5</span></div><br>
+                    <p>Rs 130 </p><br>
+                    <select name="quantity" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <button class="cart js-cart"
+                    data-product-id="">Add To Cart</button>
+        </div>
+
+    </div>
+    <style>
+        /* Add your CSS styles here */
+        footer {
+          background-color: #7b8793;
+          padding: 2rem;
+          text-align: center;
+        }
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+        
+      </style>
+      
+    </head>
+    <body>
+      <!-- Add your page content here -->
+  
+      <footer>
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Email: amit.pokhrel@kiec.edu.np</p>
+          <p>Phone: 9847226995</p>
+          <p>Address: Laligurans Municipality, Tehrathum-09,Solma</p>
+        </div>
+        <div class="payment-box">
+          <h2>Payment Methods</h2>
+          <table>
+            <tr>
+              <td><img src="https://play-lh.googleusercontent.com/MRzMmiJAe0-xaEkDKB0MKwv1a3kjDieSfNuaIlRo750_EgqxjRFWKKF7xQyRSb4O95Y" alt="Esewa" width="100"></td>
+              <td><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/62/6c/7e626ca1-ffc2-68b3-f96a-1428505b53f4/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png" alt="Ime Pay" width="100"></td>
+              <td><img src="https://blog.khalti.com/wp-content/uploads/2021/01/khalti-icon.png" alt="Khalti" width="100"></td>
+            </tr>
+            <tr>
+              <td>Esewa Document</td>
+              <td>Ime Pay Document</td>
+              <td>Khalti Document</td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+  
+
+       <script src="https://kit.fontawesome.com/af7cd30337.js" crossorigin="anonymous"></script>
+</body>
+</html>

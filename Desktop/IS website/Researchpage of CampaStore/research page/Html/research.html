@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campa Store Research Page</title>
+  <link rel="stylesheet" href="/Researchpage of CampaStore/research page/Css/research.css"> <!-- Link to your CSS file -->
+  <style>
+    body {
+      background-color: rgb(207, 207, 207);
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .image-column {
+      flex: 1;
+      text-align: center;
+      margin: 10px; /* Add margin for spacing between images */
+    }
+
+    .image-column img {
+      width: 100%;
+      height: auto;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+
+
+    <!--navbar code-->
+    <div class="logo">
+      <img src="/Homepage of campaStore/image/logo.png" alt="logo">
+    </div>
+  
+    <nav>
+      <ul class="navbar">
+        <li> <a class="active" href="/Homepage of campaStore/html/Index.html"> Home</a> </li>
+        <li><a href="/Product of CampaStore/21Front.html"> Product</a></li>
+        <li><a href="/Researchpage of CampaStore/research page/Html/research.html"> Research</a></li>
+        <li><a href="/Blogpage of CampaStore/HTML/Index.html"> Blog </a></li>
+        <li><a href="/About us of CampaStore/HTML/10Index.html"> About Us</a></li>
+        <li><a href="/Homepage of campaStore/html/Login.html" class="signup-btn"> Sign Up</a></li>
+        </ul>
+  
+    </nav>
+  
+  
+  
+    <!--Search bar-->
+    <div class="search">
+      <div class="icon"></div> <!-- Added icon element -->
+      <div class="input">
+        <input type="text" placeholder="Search" id="mysearch">
+      </div>
+    </div>
+  
+    <script>
+      const icon = document.querySelector('.icon');
+      const search = document.querySelector('.search');
+      icon.onclick = function () {
+        search.classList.toggle('active')
+      }
+    </script>
+  
+  
+  
+  
+    <!--cart-->
+    <div class="cart">
+      <a href="#" id="cartIcon"><img src="/Homepage of campaStore/image/cart.png" width="40px" height="40px"></a>
+    </div>
+  
+  
+    <!--Dark mode-->
+    <nav>
+      <div class="toggle-btn" id="btn">
+        <span id="btnText">Dark</span>
+        <img src="/Homepage of campaStore/image/moon.png" id="btnIcon">
+      </div>
+  
+    </nav>
+    <section>
+      <nav id="sideNav">
+  
+        <ul class="hi">
+          <img src="/Homepage of campaStore/image/logo.png" width="150px" height="120px">
+          <li><a href="/Homepage of campaStore/html/Index.html">Home</a></li>
+          <li><a href="/Product of CampaStore/21Front.html">Product</a></li>
+          <li><a href="/Researchpage of CampaStore/research page/Html/research.html">Research</a></li>
+          <li><a href="/Blogpage of CampaStore/HTML/Index.html">Blog</a></li>
+          <li><a href="/About us of CampaStore/HTML/10Index.html">About Us</a></li>
+          <li><a href="/Homepage of campaStore/html/Login.html">Signup/login</a></li>
+        </ul>
+      </nav>
+      <img src="/Homepage of campaStore/image/aaryan.png" id="menuBtn" width="10px" height="50px">
+  
+      <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+  
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+          if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+          }
+  
+          else {
+            sideNav.style.right = "-250px";
+          }
+        }
+  
+      </script>
+      </nav>
+    </section>
+  
+  
+  
+  </header>
+  <script>
+    let btn = document.getElementById("btn");
+    let btnText = document.getElementById("btnText");
+    let btnIcon = document.getElementById("btnIcon");
+  
+    btn.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+  
+      if (document.body.classList.contains("dark-theme")) {
+        btnIcon.src = "/Homepage of campaStore/image/sun.png";
+        btnText.innerHTML = "Light";
+  
+      }
+      else {
+        btnIcon.src = "/Homepage of campaStore/image/moon.png";
+        btnText.innerHTML = "Dark";
+  
+      }
+    }
+  </script>
+<marquee>
+  <h1>Welcome to Campa Store Research Page</h1>
+</marquee>
+
+<p>First of all, let's talk about Campa Store, a unique name that is related to all our members. 
+  We have created our website name in a unique way that is related to us. 
+  Secondly, the meaning of CAMPA Store is defined as follows: each letter, C means Chasita, A means Aryan, M means Manav, P means Pranisha, and lastly, A means Amit.
+  This is almost related to each team member of our website designer members. 
+  We have created this website name uniquely, and we haven't copied this name from any other website, so it is unique.</p>
+
+  <div class="research-slogan">
+    <h2>Research Slogans:</h2>
+    <ol>
+      <li>Target Audience Analysis.</li>
+      <li>Seasonal Promotions.</li>
+      <li>Local Sourcing</li>
+      <li>Healthy Eating Initiatives</li>
+      <li>Online Ordering and Delivery Services</li>
+      <li>Environmental Sustainability</li>
+      <li>Promotions on Social Media</li>
+      <li>Customers Feedback and Reviews</li>
+      <li>Discovering fresher choices for a healthier you.</li>
+      <li>Exploring the taste of freshness, one product at a time.</li>
+      <li>At Campa Store, freshness is our promise and passion.</li>
+    </ol>
+  </div>
+
+
+<!-- Images Section -->
+<div class = "Main-Container">
+  <!-- Comparison Section -->
+  <div class="comparison">
+    <!-- Student's Website -->
+    <div class="website">
+      <h2>OUR HOME WEBSITE IMAGE</h2>
+      <img src="/Researchpage of CampaStore/research page/Image/home.png" alt="Student's Website">
+      
+    </div>
+    <!-- Investigated Website -->
+    <div class="website">
+      <h2>RESEARCH IMAGE AND LINK</h2>
+      <a href="https://www.daraz.com.np/#"><img src="/Researchpage of CampaStore/research page/Image/darazhome.png" alt="Investigated Website"></a>
+    </div>
+   
+  </div>
+  <p>The first image on the left refers to OUR homepage, and the second image on the right pertains to references to the homepage of Daraz.</p>
+</div>
+<!-- End Images Section -->
+
+<!-- Images Section -->
+<div class = "Main-Container">
+  <!-- Comparison Section -->
+  <div class="comparison">
+    <!-- Student's Website -->
+    <div class="website">
+      <h2>OUR PRODUCT WEBSITE IMAGE</h2>
+      <img src="/Researchpage of CampaStore/research page/Image/product.png" alt="Student's Website">
+      
+    </div>
+    <!-- Investigated Website -->
+    <div class="website">
+      <h2>RESEARCH IMAGE AND LINK</h2>
+      <a href="https://www.daraz.com.np/shop/gadgets-all-product/"><img src="/Researchpage of CampaStore/research page/Image/darazproduct.png" alt="Investigated Website"></a>
+    </div>
+   
+  </div>
+  <p>The first image on the left refers to OUR productpage, and the second image on the right pertains to references to the productpage of Daraz</p>
+</div>
+<!-- End Images Section -->
+<!-- Images Section -->
+<div class = "Main-Container">
+  <!-- Comparison Section -->
+  <div class="comparison">
+    <!-- Student's Website -->
+    <div class="website">
+      <h2>OUR  ABOUT US WEBSITE IMAGE</h2>
+      <img src="/Researchpage of CampaStore/research page/Image/about team.png" alt="Student's Website">
+      
+    </div>
+    <!-- Investigated Website -->
+    <div class="website">
+      <h2>RESEARCH IMAGE AND LINK</h2>
+      <a href="https://depositphotos.com/vector/set-flat-design-web-page-templates-team-teamwork-market-research-367974068.html"><img src="/Researchpage of CampaStore/research page/Image/about us k.webp" alt="Investigated Website"></a>
+    </div>
+   
+  </div>
+  <p>The first image on the left refers to OUR About us page, and the second image on the right pertains to references to thedemo images we have taken from given link</p>
+</div>
+<!-- End Images Section -->
+<!-- Images Section -->
+<div class = "Main-Container">
+  <!-- Comparison Section -->
+  <div class="comparison">
+    <!-- Student's Website -->
+    <div class="website">
+      <h2>OUR RESEARCH WEBSITE IMAGE</h2>
+      <img src="/Researchpage of CampaStore/research page/Image/Reaserach page.png" alt="Student's Website">
+      
+    </div>
+    <!-- Investigated Website -->
+    <div class="website">
+      <h2>RESEARCH IMAGE AND LINK</h2>
+      <a href="https://depositphotos.com/vector/set-flat-design-web-page-templates-team-teamwork-market-research-367974068.html"><img src="/Researchpage of CampaStore/research page/Image/reserach demo.jpg" alt="Investigated Website"></a>
+    </div>
+   
+  </div>
+  <p>The first image on the left side refers to my Research and second image at the right side refers to the references to them website.</p>
+</div>
+<!-- End Images Section -->
+<!-- Images Section -->
+<div class = "Main-Container">
+  <!-- Comparison Section -->
+  <div class="comparison">
+    <!-- Student's Website -->
+    <div class="website">
+      <h2>OUR BLOG WEBSITE IMAGE</h2>
+      <img src="/Researchpage of CampaStore/research page/Image/blog3.jpeg" alt="Student's Website">
+      
+    </div>
+    <!-- Investigated Website -->
+    <div class="website">
+      <h2>RESEARCH IMAGE AND LINK</h2>
+      <a href="https://templatemo.com/tm-043-restaurant"><img src="/Researchpage of CampaStore/research page/Image/Classic-1024x502.png" alt="Investigated Website"></a>
+    </div>
+   
+  </div>
+  <p>The first image on the left side refers to our reference Blog page and second image at the right side refers to the references to the home page.</p>
+</div>
+</div>
+<!-- End Images Section -->
+
+<h2>Map Location</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38631.3397203901!2d-73.97762182206347!3d40.76445464277411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259c9f6a3c32b%3A0xf867165149b94a23!2sCentral%20Park!5e0!3m2!1sen!2sus!4v1617978080355!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+</section>
+<footer>
+ <div class="footer-container">
+   <div class="logo"><img src="/Homepage of campaStore/image/logo.png"></div>
+   <div class="navigation">
+     <h2>Navigation</h2>
+
+     <a href="Index.html">Home</a>
+     <a href="#">Products</a>
+     <a href="/html/contact.html">Contact Us</a>
+
+   </div>
+
+   <div class="useful-links">
+     <h2>Useful Links</h2>
+
+     <a href="#">Coupons</a>
+     <a href="#">Blog Post</a>
+     <a href="#">Return Policy</a>
+     <a href="#">Join Affiliate</a>
+
+   </div>
+   <div class="follow-us">
+     <h2>Follow Us</h2>
+
+     <a href="https://www.facebook.com/">Facebook</a>
+     <a href="https://twitter.com/i/flow/login">Twitter</a>
+     <a href="https://www.instagram.com/">Instagram</a>
+     <a href="https://www.youtube.com/">Youtube</a>
+
+
+   </div>
+   <div class="payment-box">
+
+     <h3>Payment Method:</h3>
+     <form action="/payment" method="post">
+       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+         data-key="pk_test_TYooMQauvdEDq54NiTphI7jx" data-amount="999" data-name="Demo Site"
+         data-description="Example Description"
+         data-image="https://play-lh.googleusercontent.com/MRzMmiJAe0-xaEkDKB0MKwv1a3kjDieSfNuaIlRo750_EgqxjRFWKKF7xQyRSb4O95Y">
+         </script>
+
+
+
+       <div class="copyright">
+         
+         <div class="campa">
+         <p> &copy; Copyright 2024 CampaStore</p>
+         </div>
+
+       </div>
+   </div>
+</footer>
+</body>
+</html>
+
+</body>
+</html>

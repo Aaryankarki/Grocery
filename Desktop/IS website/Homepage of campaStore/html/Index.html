@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampaStore</title>
+  <link rel="stylesheet" href="/Homepage of campaStore/css/Style.css">
+
+  <link rel="icon" href="/Homepage of campaStore/image/logo.png">
+
+  <section>
+    <marquee bgcolor="#f7f2d8">
+      <h1> Welcome to CampaStore</h1>
+    </marquee>
+  </section>
+</head>
+
+<body>
+  <header>
+  
+
+    <!--navbar code-->
+    <div class="logo">
+      <img src="/Homepage of campaStore/image/logo.png" alt="logo">
+    </div>
+
+    <nav>
+      <ul class="navbar">
+        <li> <a class="active" href="/Homepage of campaStore/html/Index.html"> Home</a> </li>
+        <li><a href="/Product of CampaStore/21Front.html"> Product</a></li>
+        <li><a href="/Researchpage of CampaStore/research page/Html/research.html"> Research</a></li>
+        <li><a href="/Blogpage of CampaStore/HTML/Index.html"> Blog </a></li>
+        <li><a href="/About us of CampaStore/HTML/10Index.html"> About Us</a></li>
+        <li><a href="/Homepage of campaStore/html/Login.html" class="signup-btn"> Sign Up</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <!--Search bar-->
+    <div class="search">
+      <div class="icon"></div> <!-- Added icon element -->
+      <div class="input">
+        <input type="text" placeholder="Search" id="mysearch">
+      </div>
+    </div>
+
+    <script>
+      const icon = document.querySelector('.icon');
+      const search = document.querySelector('.search');
+      icon.onclick = function () {
+        search.classList.toggle('active')
+      }
+    </script>
+
+
+
+
+    <!--cart-->
+    <div class="cart">
+      <a href="#" id="cartIcon"><img src="/Homepage of campaStore/image/cart.png" width="40px" height="40px"></a>
+    </div>
+
+    <!-- Include JavaScript file -->
+    <script src="/javascript/hi.js"></script>
+
+
+
+    <!--Dark mode-->
+    <nav>
+      <div class="toggle-btn" id="btn">
+        <span id="btnText">Dark</span>
+        <img src="/Homepage of campaStore/image/moon.png" id="btnIcon">
+      </div>
+
+    </nav>
+    <section>
+      <nav id="sideNav">
+
+        <ul class="hi">
+          <img src="/Homepage of campaStore/image/logo.png" width="150px" height="120px">
+          <li><a href="/Homepage of campaStore/html/Index.html">Home</a></li>
+          <li><a href="/Product of CampaStore/21Front.html">Product</a></li>
+          <li><a href="/Researchpage of CampaStore/research page/Html/research.html">Research</a></li>
+          <li><a href="/Blogpage of CampaStore/HTML/Index.html">Blog</a></li>
+          <li><a href="/About us of CampaStore/HTML/10Index.html">About Us</a></li>
+          <li><a href="/Homepage of campaStore/html/Login.html">Signup/login</a></li>
+        </ul>
+      </nav>
+      <img src="/Homepage of campaStore/image/aaryan.png" id="menuBtn" width="10px" height="50px">
+
+      <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+          if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+          }
+
+          else {
+            sideNav.style.right = "-250px";
+          }
+        }
+
+      </script>
+      </nav>
+    </section>
+
+
+
+  </header>
+  <script>
+    let btn = document.getElementById("btn");
+    let btnText = document.getElementById("btnText");
+    let btnIcon = document.getElementById("btnIcon");
+
+    btn.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+
+      if (document.body.classList.contains("dark-theme")) {
+        btnIcon.src = "/Homepage of campaStore/image/sun.png";
+        btnText.innerHTML = "Light";
+
+      }
+      else {
+        btnIcon.src = "/Homepage of campaStore/image/moon.png";
+        btnText.innerHTML = "Dark";
+
+      }
+    }
+  </script>
+
+
+  <!--Starting point of website-->
+  <section>
+   <a href="/Product of CampaStore/21Front.html" ><img src="/Homepage of campaStore/image/shopnow.png" width="1440px" height="680px"></a>
+    <div class="black">
+    <button type="button"><a href="/Product of CampaStore/21Front.html">Shop Now</a></button>
+    </div>
+  </section>
+
+
+  <section>
+    <marquee bgcolor="#f7f2d8" class="head">
+      <h2 class="text">"Welcome to a place where vitality thrives and happiness abounds. Here, we believe in nourishing
+        both body and soul, in living a life that radiates health and joy. Our mission is simple: to fuel your body with
+        goodness, to move with purpose, and to savor every precious moment. Join us on a journey of wellness, where
+        every step you take brings you closer to a vibrant, fulfilling life. Together, let's embrace the vitality within
+        and create a world where health and happiness flourish."</h2>
+    </marquee>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!--Image slider-->
+  <section>
+    <style>
+      .splide__slide img {
+        width: 50%;
+        height: auto;
+      }
+    </style>
+    <a href="/Product of CampaStore/21Front.html">
+    <div class="slider">
+      <img src="/Homepage of campaStore/image/transition1.jpeg" alt="Image1">
+      <img src="/Homepage of campaStore/image/transition2.jpeg" alt="Image2">
+      <img src="/Homepage of campaStore/image/transition4.jpeg" alt="Image 3">
+      <img src="/Homepage of campaStore/image/transition6.jpeg" alt="image4">
+    </a>
+
+      <div> class="navigation-button">
+        <span class="dot active" onclick="changeSlide(0)"></span>
+        <span class="dot" onclick="changeSlide(1)"></span>
+        <span class="dot" onclick="changeSlide(2)"></span>
+        <span class="dot" onclick="changeSlide(3)"></span>
+
+      </div>
+    </div>
+
+
+    <style>
+      .slider {
+        width: 100%;
+        height: 510px;
+        position: relative;
+      }
+
+      .slider img {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      .slider img.active {
+        opacity: 1;
+      }
+
+      .navigation-button {
+        text-align: center;
+        position: relative;
+      }
+
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+    </style>
+
+    <script>
+      var imgs = document.querySelectorAll('.slider img');
+      var dots = document.querySelectorAll('.dot');
+      var currentImg = 0;
+      const interval = 3000;
+
+      function changeSlide(n) {
+        for (var i = 0; i < imgs.length; i++) {
+          imgs[i].classList.remove('active');
+          dots[i].classList.remove('active');
+        }
+
+        currentImg = (n + imgs.length) % imgs.length;
+
+        imgs[currentImg].classList.add('active');
+        dots[currentImg].classList.add('active');
+      }
+
+      function startSlide() {
+        setInterval(function () {
+          changeSlide(currentImg + 1);
+        }, interval);
+      }
+
+      dots[0].classList.add('active');
+      imgs[0].classList.add('active');
+
+      startSlide();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-slider').mount();
+      });
+    </script>
+    <script>
+
+      // Select the button
+      const btn = document.querySelector(".btn-toggle");
+
+      // Listen for a click on the button
+      btn.addEventListener("click", function () {
+        // Then toggle (add/remove) the .dark-mode class to the body
+        document.body.classList.toggle("dark-mode");
+      });
+    </script>
+
+    <div class="feature">
+      <h1 align="center"><b>Features Product</b></h1>
+    </div>
+    <div class="h7">
+      <a href="/Product of CampaStore/24Item.fruit.html"><img src="/Homepage of campaStore/image/fruits.png" height="550px" width="420px"></a>
+      <a href="/Product of CampaStore/19Drinks.html"><img src="/Homepage of campaStore/image/drink.png" height="550px" width="420px"></a>
+      <a href="/Product of CampaStore/20Final.html"><img src="/Homepage of campaStore/image/Vegetable.png" height="550px" width="420px"></a>
+    </div>
+    </div>
+
+
+
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="logo"><img src="/Homepage of campaStore/image/logo.png"></div>
+        <div class="navigation">
+          <h2>Navigation</h2>
+
+          <a href="/Homepage of campaStore/html/Index.html">Home</a>
+          <a href="/Product of CampaStore/21Front.html">Products</a>
+          <a href="/Homepage of campaStore/html/Contact Us.html">Contact Us</a>
+
+        </div>
+
+        <div class="useful-links">
+          <h2>Useful Links</h2>
+
+          <a href="#">Coupons</a>
+          <a href="#">Blog Post</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Join Affiliate</a>
+
+        </div>
+        <div class="follow-us">
+          <h2>Follow Us</h2>
+
+          <a href="https://www.facebook.com/profile.php?id=61559792550482">Facebook</a>
+          <a href="https://twitter.com/i/flow/login">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.youtube.com/">Youtube</a>
+
+
+        </div>
+        <div class="payment-box" align="center">
+          <form action="/payment" method="post">
+            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_TYooMQauvdEDq54NiTphI7jx" data-amount="999" data-name="Demo Site"
+              data-description="Example Description"
+              data-image="https://play-lh.googleusercontent.com/MRzMmiJAe0-xaEkDKB0MKwv1a3kjDieSfNuaIlRo750_EgqxjRFWKKF7xQyRSb4O95Y">
+              </script>
+
+          
+            
+
+
+
+            <div class="copyright">
+
+              <p > &copy; Copyright 2024 CampaStore</p>
+
+            </div>
+        </div>
+    </footer>
+  </section>
+</body>
+
+</html>

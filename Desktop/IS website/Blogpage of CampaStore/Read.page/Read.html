@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampaStore/blogPage:/ReadMore/.com</title>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/96d82a9454.js" crossorigin="anonymous"></script>
+        <!-- Custom Styling-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/image/logo.png">
+
+
+        <section>
+            <marquee bgcolor="#f7f2d8"><h1> Welcome to CampaStore</h1></marquee>
+        </section>
+    </head>
+    
+    <body>
+    <header>
+      <!--navbar code-->
+        <div class="logo">
+            <img src="/image/logo.png" alt="logo">
+        </div>
+    
+        <nav>
+               <ul class="navbar">
+      <li> <a class="active" href="#"> Home</a> </li>
+      <li><a href="/html/product.html"> Product</a></li>
+      <li><a href="research.html"> Research</a></li>
+       <li><a href="blog.html/"> Blog </a></li>
+      <li><a href="aboutus.html"> About Us</a></li>
+     <li><a href="/html/Login.html" class="signup-btn"> Sign Up</a></li>
+     
+    </nav>
+    
+    
+    
+    <!--Search bar-->
+    <div class="search">
+      <div class="icon"></div> <!-- Added icon element -->
+      <div class="input">
+    <input type="text" placeholder="Search" id="mysearch">
+    </div>
+    </div>
+    
+    <script>
+      const icon = document.querySelector('.icon');
+      const search = document.querySelector('.search');
+      icon.onclick = function(){
+          search.classList.toggle('active')
+      }
+    </script>
+    
+    
+    
+    
+    <!--cart-->
+    <div class="cart">
+      <a href="#" id="cartIcon"><img src="/image/cart.png" width="40px" height ="40px"></a>
+    </div>
+    
+    <!-- Include JavaScript file -->
+    <script src="/javascript/hi.js"></script>
+    
+    
+    
+    <!--Dark mode-->
+    <nav>
+        <div class="toggle-btn" id="btn">
+        <span id="btnText">Dark</span>
+        <img src="/image/moon.png" id="btnIcon">
+     </div>
+    
+    </nav>
+    <section>
+    <nav id="sideNav">
+        
+        <ul class="hi">
+         <img src="/image/logo.png" width="150px" height="120px">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="/html/Login.html">Signup/login</a></li>
+        </ul>
+    </nav>
+        <img src="/image/menu.png" id="menuBtn" width="10px" height="50px">
+    
+                <script>
+                    var menuBtn= document.getElementById("menuBtn");
+                    var sideNav= document.getElementById("sideNav");
+    
+                    sideNav.style.right= "-250px";
+                    menuBtn.onclick= function(){
+                        if( sideNav.style.right== "-250px")
+                        {
+                        sideNav.style.right="0";
+                       }
+    
+                    else{
+                        sideNav.style.right= "-250px";
+                    }
+                }
+    
+                </script>
+    </nav>
+    </section>
+    
+    
+    
+    </header>
+    <script>
+        let btn= document.getElementById("btn");
+        let btnText= document.getElementById("btnText");
+        let btnIcon= document.getElementById("btnIcon");
+    
+    btn.onclick= function(){
+            document.body.classList.toggle("dark-theme");
+    
+            if( document.body.classList.contains("dark-theme")){
+                btnIcon.src="/image/sun.png";
+                btnText.innerHTML="Light";
+    
+            }
+            else{
+                btnIcon.src="/image/moon.png";
+                btnText.innerHTML="Dark";
+    
+            }
+        }
+    </script>
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                CONNECTING FARMERS & HOUSEHOLDS
+            </h1>
+        </div>
+    </header>
+    <section>
+  <div class="box" align="center">
+    <h2>Connecting Farmers & Households Through Campa Store</h2>
+    <img src="/Image/vege.png" class="blog-image" alt="image">
+    <p>Mr. Jhon Charles has been involved with Campa Store since January 2021. 
+        He signed up as a farmer and not only started receiving products and services including farm 
+        tools, modern machinery, advisory, and training from Campa Store, but also started selling his 
+        produce through the Campa Store's Webpage. Ever since he has been able to benefit greatly from the 
+        platform and expresses his gratitude.</p>
+        <img src="/Image/Fruits.jpeg" class="blog-image" alt="image">
+    <p>Campa platform has many applications and businesses under its umbrella creating a perfect 
+       ecosystem capable of disrupting the way farming and consumption is done in Nepal. Procuring 
+       fresh vegetables, fruits, and produce directly from local farmers, Campa platform uses Campa FOOD
+        under its ecosystem to sell and deliver the fresh produce directly to households. </p>
+    <p>At Campa Store, while we aim to genuinely support all the farmers with increasing the overall output at
+       their farms and also with finding higher rates for their products by avoiding middlemen, our ability
+       to accommodate more farmers in our network relies on the demand being generated within Campa Store. 
+       By generating more and more demand, we can help more and more farmers. So you can be a part of this change,
+       this disruption that we are aiming for, by purchasing through our platform. There are other reasons why Campa Food
+       is one of the best online platforms for buying fresh vegetables, fruits, bakeries, coffee, groceries, and more. First, 
+       we deliver fresh fruits and vegetables at your doorstep just at the click of a few buttons. Second, we guarantee the 
+       quality of the produce that we deliver. If you are not satisfied with the quality, we will replace your delivery. Third, you 
+       can buy vegetables and fruits online for your households or buy bulk quantities for your businesses and the produce are 
+       available in many types including organic, local, and regular market fresh categories.</p>
+       <img src="/Image/Farm.png" class="blog-image" alt="image">
+    <p>If you are a conscious consumer and feel good about our initiative, we are super delighted and want you to know that
+       we are not only thinking about farmers, we are also thinking about consumers like yourself. We want to establish a 
+       transparent and reliable supply chain that can bring local and organic vegetables, fruits, and more to your doorstep
+       at an affordable price. The problems with consuming foods grown with a lot of pesticides and chemical inputs are being 
+       more and more evident with facts like rapid increase in diseases including cancer, endocrine problems, and more. </p>
+  </div>
+
+</body>
+</html>

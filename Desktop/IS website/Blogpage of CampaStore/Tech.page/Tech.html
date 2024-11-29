@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/96d82a9454.js" crossorigin="anonymous"></script>
+        <!-- Custom Styling-->
+        <link rel="stylesheet" href="/Blogpage of CampaStore/Tech.page/Style.css">
+        
+        <section>
+            <marquee bgcolor="#f7f2d8">
+              <h1> Welcome to CampaStore</h1>
+            </marquee>
+          </section>
+        </head>
+        
+        <body>
+          <header>
+        
+        
+            <!--navbar code-->
+            <div class="logo">
+              <img src="/Homepage of campaStore/image/logo.png" alt="logo">
+            </div>
+        
+            <nav>
+              <ul class="navbar">
+                <li> <a class="active" href="/Homepage of campaStore/"> Home</a> </li>
+                <li><a href="/Product of CampaStore/21Front.html"> Product</a></li>
+                <li><a href="research.html"> Research</a></li>
+                <li><a href="/Blogpage of CampaStore/HTML/Index.html"> Blog </a></li>
+                <li><a href="/About us of CampaStore/HTML/10Index.html"> About Us</a></li>
+                <li><a href="/Homepage of campaStore/html/Login.html" class="signup-btn"> Sign Up</a></li>
+                </ul>
+        
+            </nav>
+        
+        
+        
+            <!--Search bar-->
+            <div class="search">
+              <div class="icon"></div> <!-- Added icon element -->
+              <div class="input">
+                <input type="text" placeholder="Search" id="mysearch">
+              </div>
+            </div>
+        
+            <script>
+              const icon = document.querySelector('.icon');
+              const search = document.querySelector('.search');
+              icon.onclick = function () {
+                search.classList.toggle('active')
+              }
+            </script>
+        
+        
+        
+        
+            <!--cart-->
+            <div class="cart">
+              <a href="#" id="cartIcon"><img src="/Homepage of campaStore/image/cart.png" width="40px" height="40px"></a>
+            </div>
+        
+            <!-- Include JavaScript file -->
+            <script src="/javascript/hi.js"></script>
+        
+        
+        
+            <!--Dark mode-->
+            <nav>
+              <div class="toggle-btn" id="btn">
+                <span id="btnText">Dark</span>
+                <img src="/Homepage of campaStore/image/moon.png" id="btnIcon">
+              </div>
+        
+            </nav>
+            <section>
+              <nav id="sideNav">
+        
+                <ul class="hi">
+                  <img src="/Homepage of campaStore/image/logo.png" width="150px" height="120px">
+                  <li><a href="/Homepage of campaStore/html/Index.html">Home</a></li>
+                  <li><a href="/Product of CampaStore/21Front.html">Product</a></li>
+                  <li><a href="#">Research</a></li>
+                  <li><a href="/Blogpage of CampaStore/HTML/Index.html">Blog</a></li>
+                  <li><a href="/About us of CampaStore/HTML/10Index.html">About Us</a></li>
+                  <li><a href="/Homepage of campaStore/html/Login.html">Signup/login</a></li>
+                </ul>
+              </nav>
+              <img src="/Homepage of campaStore/image/aaryan.png" id="menuBtn" width="10px" height="50px">
+        
+              <script>
+                var menuBtn = document.getElementById("menuBtn");
+                var sideNav = document.getElementById("sideNav");
+        
+                sideNav.style.right = "-250px";
+                menuBtn.onclick = function () {
+                  if (sideNav.style.right == "-250px") {
+                    sideNav.style.right = "0";
+                  }
+        
+                  else {
+                    sideNav.style.right = "-250px";
+                  }
+                }
+        
+              </script>
+              </nav>
+            </section>
+        
+        
+        
+          </header>
+          <script>
+            let btn = document.getElementById("btn");
+            let btnText = document.getElementById("btnText");
+            let btnIcon = document.getElementById("btnIcon");
+        
+            btn.onclick = function () {
+              document.body.classList.toggle("dark-theme");
+        
+              if (document.body.classList.contains("dark-theme")) {
+                btnIcon.src = "/Blogpage of CampaStore/Image/sun.png";
+                btnText.innerHTML = "Light";
+        
+              }
+              else {
+                btnIcon.src = "/Blogpage of CampaStore/Image/moon.png";
+                btnText.innerHTML = "Dark";
+        
+              }
+            }
+          </script>
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                TECHNOLOGY AND <br>BUSINESS
+            </h1>
+        </div>
+    </header>
+    <section class="blog-section">
+        <div>
+        <img src="/Blogpage of CampaStore/Image/tech2.jpeg" class="blog-image" alt="image">
+    </div>
+    <div> 
+        <h1 class="blog-title">Introduction</h1>   
+        <p class="section-content">In today's digital age, technology has become a part of our society
+             and economy. It has transformed the way we work, learn, and interact with each other.
+             It has led to the development of innovative devices, software applications, and systems 
+             that have transformed industries and introduced new possibilities. Also, technology drives
+             innovation in business. It enables companies to come up with new ideas, products, and ways 
+             of doing things. This innovation gives businesses a competitive advantage and helps them 
+             stand out in the market.</p>
+    </div>
+    </section>
+    <section class="blog-section">
+        <div>
+            <img src="/Blogpage of CampaStore/Image/positive impact.jpeg" class="blog-image" alt="image">
+        </div>
+        <div>
+            <h1 class="blog-title">Positive Impact</h1>
+            <p class="section-content">
+                Technology has profoundly transformed modern businesses by enhancing efficiency, communication, 
+                and global reach while enabling data-driven decision-making, improving customer experiences, 
+                fostering innovation, and driving cost savings and scalability. Through advancements in digital 
+                technologies such as cloud computing, artificial intelligence, and e-commerce platforms, businesses 
+                can streamline operations, expand their market presence, and gain insights that fuel strategic growth. 
+                Overall, the positive impacts of technology on modern businesses are multifaceted, enabling them to adapt, 
+                compete, and thrive in today's digital economy.
+            </p> 
+        </div>
+    </section>
+    <section class="blog-section">
+        <div>
+            <img src="/Blogpage of CampaStore/Image/Negative.jpeg" class="blog-image" alt="image">
+        </div>
+        <div>
+            <h1 class="blog-title">Negative Impact</h1>
+            <p class="section-content">
+                While technology has brought numerous benefits to businesses, it also present numerous negative impacts too.
+                One of the major negative impact is the cyber threats and security breaches, which will result in financial losses, 
+                reputational damage, and legal liabilities for businesses. Moreover, the rapid technological changes in business can
+                create a lot of challenges related to skill gaps, workforce displacement, and the need for continuous training and upskilling. 
+            </p>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div>
+            <img src="/Blogpage of CampaStore/Image/Day to day.jpeg" class="blog-image" alt="image">
+        </div>
+        <div>
+            <h1 class="blog-title">How technology has affected daily life and 
+                                    business while selling grocery Items.</h1>
+            <p class="section-content">
+                Technology has fundamentally changed how people purchase and sell grocery items, leading to significant transformations in 
+                daily life and the grocery business.Furthermore, technological advancements have facilitated the transformation of grocery 
+                stores into digital environments, incorporating innovations like self-service checkout terminals, intelligent shopping carts, 
+                and automated inventory tracking systems, thereby improving the overall shopping journey for customers.Moreover, technology 
+                has allowed grocery stores to become digitalized.
+            </p>
+        </div>
+
+    </section>
+    <section class="blog-section">
+        <div>
+            <img src="/Blogpage of CampaStore/Image/conckusion.jpeg" class="blog-image" alt="image">
+        </div>
+        <div>
+            <h1 class="blog-title">Conclusion</h1>
+            <p class="section content">
+                In conclusion, the impact of technology on daily life and business has been profound and far-reaching. From transforming the 
+                way people shop for groceries to revolutionizing business operations, technology has brought about unprecedented convenience, 
+                efficiency, and innovation. As we continue to embrace and adapt to technological advancements, it is evident that technology 
+                will play an increasingly pivotal role in shaping the future of both daily life and business, driving further improvements 
+                and opportunities for growth.
+            </p>
+        </div>
+
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="footer-container">
+          <div class="logo"><img src="/Blogpage of CampaStore/Image/logo.png"></div>
+          <div class="navigation">
+            <h2>Navigation</h2>
+            
+              <a href="/Homepage of campaStore/html/Index.html">Home</a>
+              <a href="#">Products</a>
+              <a href="/Homepage of campaStore/html/Contact Us.html">Contact Us</a>
+            
+          </div>
+          
+          <div class="useful-links">
+            <h2>Useful Links</h2>
+            
+              <a href="#">Coupons</a>
+              <a href="#">Blog Post</a>
+              <a href="#">Return Policy</a>
+              <a href="#">Join Affiliate</a>
+            
+          </div>
+          <div class="follow-us">
+            <h2>Follow Us</h2>
+            
+              <a href="https://www.facebook.com/profile.php?id=61559792550482">Facebook</a>
+              <a href="https://twitter.com/i/flow/login">Twitter</a>
+              <a href="https://www.instagram.com/">Instagram</a>
+              <a href="https://www.youtube.com/">Youtube</a>
+          
+          
+        </div>
+        <div class="payment-box">
+          
+          <h3>Payment Method:</h3>
+          <form action="/payment" method="post">
+            <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+            data-amount="999"
+            data-name="Demo Site"
+            data-description="Example Description"
+            data-image="https://play-lh.googleusercontent.com/MRzMmiJAe0-xaEkDKB0MKwv1a3kjDieSfNuaIlRo750_EgqxjRFWKKF7xQyRSb4O95Y">
+            </script>
+  
+  
+  
+        <div class="copyright">
+       
+         <p align="center"> &copy; Copyright 2024 CampaStore</p>
+    
+          </div>
+        </div>
+      </footer>
+      </section>
+      </body>
+      </html>
+      
+  </body>
+  </html>
+</body>
+</html>

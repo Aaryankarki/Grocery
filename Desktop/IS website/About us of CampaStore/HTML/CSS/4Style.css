@@ -1,0 +1,54 @@
+body {
+    background-image: url("/Image/elephant--17080.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 900;
+    height:500;
+  }
+        header {
+          background-color: #7f8286;
+          color:  #dfdfd6;;
+          padding: 2rem;
+          text-align: center;
+        }
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 0.5rem;
+        }
+        main {
+          padding: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+        }
+        footer {
+          background-color: #575753cb;
+          padding: 2rem;
+          text-align: center;
+          width: 1500px;
+          height:10px;
+        }
+        .image-container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 2rem;
+        }
+        .image-container img {
+          max-width: 100%;
+          height: auto;
+        }
+        .image-box {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #57565d;
+    overflow: hidden;
+    background-color: #d8cbcb;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.25);
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
